@@ -1,0 +1,7 @@
+s = input()
+print(len(s))
+print(s.upper())
+print(s.lower())
+print(s.replace(' ', ''))
+print(s[0])
+print(s[-1])
