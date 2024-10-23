@@ -12,7 +12,7 @@ class Product:
 
 class Shop:
     def __init__(self):
-        self.__file_name = r'C:\AlGORITM\Python_3_12_6\programms\Urban\module_7\module_7_1_folder\products.txt'
+        self.__file_name = 'products.txt'
 
     def get_products(self):
         try:
