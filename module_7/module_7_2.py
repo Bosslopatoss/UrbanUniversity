@@ -1,6 +1,6 @@
 def custom_write(file_name, strings):
     string_positions = {}
-    with open(file_name, "a", encoding="utf-8") as file:
+    with open(file_name, "w", encoding="utf-8") as file:
         k = 1
         for i in strings:
             tuple_ = (k, file.tell())
