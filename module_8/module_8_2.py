@@ -8,7 +8,6 @@ def personal_sum(numbers):
             print(f'Некорректный тип данных для подсчёта суммы - {i}')
     return (result, incorrect_data)
 def calculate_average(numbers):
-    
     try:
         tuple_ = personal_sum(numbers)
         return tuple_[0] / (len(numbers) - tuple_[1])
