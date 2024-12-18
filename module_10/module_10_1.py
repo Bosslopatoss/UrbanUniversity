@@ -4,10 +4,10 @@ import threading
 start1 = time.time()
 
 def write_words(word_count, file_name):
-    for i in range(1, word_count+1):  
+    for i in range(1, word_count+1):
         with open(file_name, 'a') as file:
             file.write(f"Some word N {i}\n")
-    time.sleep(0.1)
+        time.sleep(0.1)
     print(f"Finished writing to file {file_name}")
         
 write_words(10, 'example1.txt')
@@ -26,7 +26,7 @@ args = [(10, 'example5.txt'),
         (100, 'example8.txt')]
 
 for i in range(4):
-    t = threading.Thread(target=write_words, args=(args[i]))
+    t = threading.Thread(target=write_words, args=args[i])
     threads.append(t)    
 for t in threads:
     t.start()
